@@ -1,0 +1,69 @@
+/* Muli (served by Google Fonts as "Mulish") */
+:root {
+    --bs-body-font-family: "Muli", "Mulish", sans-serif;
+}
+header {
+    /* lets the nav stay sticky for the whole page, not just inside <header> */
+    display: contents;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    overflow-x: hidden
+}
+
+body {
+    margin: 0;
+    background: #fff;
+    color: var(--text);
+    font-family: "Muli", "Mulish", sans-serif;
+    font-size: 1rem;
+    line-height: 1.55;
+    /*overflow-x: hidden*/
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Muli", "Mulish", sans-serif;
+}
+h1, h2, h3, h4 {
+    color: var(--text);
+    letter-spacing: -.02em;
+    line-height: 1.2
+}
+p {
+    font-weight: 400;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle
+}
+button, input {
+    overflow: visible;
+}
+button:focus, .form-control:focus, .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+table td {
+    white-space: pre;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.text-justify {
+    text-align: justify;
+}

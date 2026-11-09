@@ -1,0 +1,77 @@
+
+
+body {
+   font-family: "Muli", "Mulish", sans-serif;
+  /*letter-spacing: 1px;*/
+  /*font-family: tt;*/
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  font-family: "Muli", "Mulish", sans-serif;
+}
+p {
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+button,
+input {
+  overflow: visible;
+}
+button:focus,
+.form-control:focus,
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+table td {
+  white-space: pre;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.text-justify {
+  text-align: justify;
+}
+
+
+/* ---------- Refreshed theme: navy + teal + gold ---------- */
+.ai_topbar { background: var(--navy); border-bottom: 0; color: #DDEBF5 }
+.ai_topbar a, .ai_topbar .ai_ic { color: var(--gold) }
+.ai_btn { background: linear-gradient(135deg, var(--blue), var(--blue-2)); border-color: transparent }
+.ai_btn:hover { background: linear-gradient(135deg, var(--navy), #163A66); border-color: transparent }
+.ai_btn_o { background: #fff; border: 2px solid var(--blue); color: var(--blue) }
+.ai_btn_o:hover { background: var(--blue); color: #fff }
+.ai_edition { background: var(--gold); color: var(--navy); letter-spacing: .02em; box-shadow: 0 6px 16px rgba(242,169,59,.35) }
+.ai_hero h1 span { color: var(--blue) }
+.ai_eyebrow { color: var(--blue) }
+.ai_cd { background: linear-gradient(135deg, var(--navy), #12365F); color: #fff }
+.ai_cd_box b { color: var(--gold) }
+.ai_footer { background: var(--navy); color: #C9D8E6 }
+
+/* understated fee note */
+.ai_fee_note { font-size: .82rem; color: var(--muted); max-width: 760px; margin: 14px auto 0; line-height: 1.6 }
+.ai_fee_note b { font-weight: 600; color: var(--text) }
+.ai_wa_btn { background: #25d366; border-color: #25d366; color: #fff }
+.ai_wa_btn:hover { background: #1ebe5b!important; color: #fff }
