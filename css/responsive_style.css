@@ -1,548 +1,580 @@
 /* Responsive styles – every media query for the site lives in this file */
 @media(max-width:991px) {
-  .ai_hero_date_badge {
-    left: 12px;
-  }
-  .ai_hero {
-    padding-bottom: 90px;
-  }
-  .ai_cd_sep {
-    display: none;
-  }
-  .ai_nav_wrap {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    background: #fff;
-    border-bottom: 1px solid var(--blue-line);
-    padding: 12px 15px 18px;
-  }
-  .ai_themes {
-    padding: 65px 0;
-  }
-  .ai_themes .ai_theme_body {
-    padding: 25px 18px 28px;
-  }
-  .ai_themes .ai_theme_body b {
-    font-size: 20px;
-  }
-  .ai_register {
-    padding: 65px 0;
-  }
-  .ai_register .ai_rf_card {
-    padding: 32px;
-    margin-top: 35px;
-  }
-  .ai_room_modern {
-    padding: 60px 0;
-  }
-  .ai_room_modern .ai_room_card {
-    grid-template-columns: 1fr;
-  }
-  .ai_room_modern .ai_room_content {
-    padding: 35px;
-  }
-  .ai_room_modern .ai_room_visual {
-    min-height: 300px;
-    padding: 35px;
-  }
-  .ai_room_modern .ai_room_visual_icon {
-    margin-bottom: 22px;
-  }
-  .ai_venue {
-    padding: 65px 0;
-  }
-  .ai_venue .ai_map {
-    height: 400px;
-    min-height: 400px;
-  }
-  .ai_venue .ai_map iframe {
-    min-height: 384px;
-  }
-  .ai_contact {
-    padding: 65px 0;
-  }
-  .ai_contact .row > .col-lg-5 > div,     .ai_contact #faq {
-    padding: 30px 24px;
-  }
-  .ai_hero_date_badge {
-    left: 12px;
-  }
-  .ai_hero {
-           padding-block: 40px 130px;
-  }
-  .ai_cd_sep {
-    display: none;
-  }
-  .ai_glance_feature {
-    min-height: 400px;
-  }
-  .ai_glance_side {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .ai_glance_info {
-    flex-direction: column;
-    gap: 14px;
-    padding: 20px 15px;
-  }
-  .ai_glance_info h3 {
-    font-size: 15px;
-  }
-  .ai_impact_content > p {
-    max-width: 650px;
-  }
-  .ai_impact_card {
-    min-height: 200px;
-  }
+    .ai_hero_date_badge {
+        left: 12px;
+    }
+    .ai_hero {
+        padding-bottom: 90px;
+    }
+    .ai_cd_sep {
+        display: none;
+    }
+    .ai_nav_wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background: #fff;
+        border-bottom: 1px solid var(--blue-line);
+        padding: 12px 15px 18px;
+    }
+    .ai_themes {
+        padding: 65px 0;
+    }
+    .ai_themes .ai_theme_body {
+        padding: 25px 18px 28px;
+    }
+    .ai_themes .ai_theme_body b {
+        font-size: 20px;
+    }
+    .ai_register {
+        padding: 65px 0;
+    }
+    .ai_register .ai_rf_card {
+        padding: 32px;
+        margin-top: 35px;
+    }
+    .ai_room_modern {
+        padding: 60px 0;
+    }
+    .ai_room_modern .ai_room_card {
+        grid-template-columns: 1fr;
+    }
+    .ai_room_modern .ai_room_content {
+        padding: 35px;
+    }
+    .ai_room_modern .ai_room_visual {
+        min-height: 300px;
+        padding: 35px;
+    }
+    .ai_room_modern .ai_room_visual_icon {
+        margin-bottom: 22px;
+    }
+    .ai_venue {
+        padding: 65px 0;
+    }
+    .ai_venue .ai_map {
+        height: 400px;
+        min-height: 400px;
+    }
+    .ai_venue .ai_map iframe {
+        min-height: 384px;
+    }
+    .ai_contact {
+        padding: 65px 0;
+    }
+    .ai_contact .row > .col-lg-5 > div,     .ai_contact #faq {
+        padding: 30px 24px;
+    }
+    .ai_hero_date_badge {
+        left: 12px;
+    }
+    .ai_hero {
+        padding-block: 40px 130px;
+    }
+    .ai_cd_sep {
+        display: none;
+    }
+    .ai_glance_feature {
+        min-height: 400px;
+    }
+    .ai_glance_side {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .ai_glance_info {
+        flex-direction: column;
+        gap: 14px;
+        padding: 20px 15px;
+    }
+    .ai_glance_info h3 {
+        font-size: 15px;
+    }
+    .ai_impact_content > p {
+        max-width: 650px;
+    }
+    .ai_impact_card {
+        min-height: 200px;
+    }
 }
 @media(max-width:767px) {
-  .ai_rf_card {
-    padding: 22px 16px;
-  }
-  .ai_rf_types, .ai_rf_types2 {
-    grid-template-columns: 1fr;
-  }
-  .ai_rf_bank li span {
-    min-width: 100%;
-  }
-  .ai_themes {
-    padding: 50px 0;
-  }
-  .ai_themes .ai_head {
-    align-items: flex-start;
-    gap: 12px;
-    flex-direction: column;
-    margin-bottom: 25px;
-  }
-  .ai_themes .ai_theme_body {
-    padding: 25px 22px 29px;
-  }
-  .ai_themes .ai_theme_body b {
-    font-size: 22px;
-  }
-  .ai_themes .ai_theme_body p {
-    font-size: 14px;
-  }
-  .ai_agenda_modern .ai_agenda_head {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .ai_agenda_modern .ai_agenda_card {
-    grid-template-columns: 76px minmax(0, 1fr);
-    gap: 17px;
-    padding: 18px;
-  }
-  .ai_agenda_modern .ai_agenda_date {
-    min-height: 105px;
-    padding: 10px 5px;
-  }
-  .ai_agenda_modern .ai_agenda_date strong {
-    font-size: 35px;
-  }
-  .ai_agenda_modern .ai_agenda_month {
-    font-size: 10px;
-    letter-spacing: 2px;
-  }
-  .ai_agenda_modern .ai_agenda_year {
-    font-size: 10px;
-  }
-  .ai_agenda_modern .ai_agenda_content h3 {
-    font-size: 17px;
-  }
-  .ai_agenda_modern .ai_agenda_content p {
-    font-size: 13px;
-  }
-  .ai_agenda_modern .ai_agenda_arrow {
-    display: none;
-  }
-  .ai_agenda_modern .ai_agenda_tags {
-    gap: 7px;
-  }
-  .ai_agenda_modern .ai_agenda_tags span {
-    padding: 6px 8px;
-    font-size: 11px;
-  }
-  .ai_contact {
-    padding: 48px 0;
-  }
-  .ai_contact .row {
-    --bs-gutter-x: 18px;
-    --bs-gutter-y: 24px;
-  }
-  .ai_contact .row > .col-lg-5 > div,     .ai_contact #faq {
-    padding: 25px 19px;
-    border-radius: 14px;
-  }
-  .ai_contact .ai_ct {
-    gap: 12px;
-    padding: 15px 0;
-  }
-  .ai_contact .ai_ct .ai_ico {
-    flex-basis: 40px;
-    width: 40px;
-    height: 40px;
-    font-size: 17px;
-  }
-  .ai_contact .ai_acc .accordion-button {
-    padding: 15px 12px;
-    gap: 10px;
-    font-size: 12px;
-  }
-  .ai_contact .ai_acc .accordion-body {
-    padding: 3px 15px 18px 52px;
-    font-size: 12px;
-  }
-  .ai_fee .ai_btn {
-    position: relative;
-    bottom: inherit;
-    left: initial;
-    transform: inherit;
-    width: 100%;
-  }
-  .ai_fee {
-    padding-bottom: 30px;
-  }
-  .ai_f50_txt b {
-    font-size: 20px;
-  }
+    .ai_rf_card {
+        padding: 22px 16px;
+    }
+    .ai_rf_types, .ai_rf_types2 {
+        grid-template-columns: 1fr;
+    }
+    .ai_rf_bank li span {
+        min-width: 100%;
+    }
+    .ai_themes {
+        padding: 50px 0;
+    }
+    .ai_themes .ai_head {
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .ai_themes .ai_theme_body {
+        padding: 25px 22px 29px;
+    }
+    .ai_themes .ai_theme_body b {
+        font-size: 22px;
+    }
+    .ai_themes .ai_theme_body p {
+        font-size: 14px;
+    }
+    .ai_agenda_modern .ai_agenda_head {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ai_agenda_modern .ai_agenda_card {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 17px;
+        padding: 18px;
+    }
+    .ai_agenda_modern .ai_agenda_date {
+        min-height: 105px;
+        padding: 10px 5px;
+    }
+    .ai_agenda_modern .ai_agenda_date strong {
+        font-size: 35px;
+    }
+    .ai_agenda_modern .ai_agenda_month {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .ai_agenda_modern .ai_agenda_year {
+        font-size: 10px;
+    }
+    .ai_agenda_modern .ai_agenda_content h3 {
+        font-size: 17px;
+    }
+    .ai_agenda_modern .ai_agenda_content p {
+        font-size: 13px;
+    }
+    .ai_agenda_modern .ai_agenda_arrow {
+        display: none;
+    }
+    .ai_agenda_modern .ai_agenda_tags {
+        gap: 7px;
+    }
+    .ai_agenda_modern .ai_agenda_tags span {
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+    .ai_contact {
+        padding: 48px 0;
+    }
+    .ai_contact .row {
+        --bs-gutter-x: 18px;
+        --bs-gutter-y: 24px;
+    }
+    .ai_contact .row > .col-lg-5 > div,     .ai_contact #faq {
+        padding: 25px 19px;
+        border-radius: 14px;
+    }
+    .ai_contact .ai_ct {
+        gap: 12px;
+        padding: 15px 0;
+    }
+    .ai_contact .ai_ct .ai_ico {
+        flex-basis: 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+    .ai_contact .ai_acc .accordion-button {
+        padding: 15px 12px;
+        gap: 10px;
+        font-size: 12px;
+    }
+    .ai_contact .ai_acc .accordion-body {
+        padding: 3px 15px 18px 52px;
+        font-size: 12px;
+    }
+    .ai_fee .ai_btn {
+        position: relative;
+        bottom: inherit;
+        left: initial;
+        transform: inherit;
+        width: 100%;
+    }
+    .ai_fee {
+        padding-bottom: 30px;
+    }
+    .ai_f50_txt b {
+        font-size: 20px;
+    }
 }
 @media(max-width:575px) {
-  .ai_sec {
-    padding: 40px 0;
-  }
-  .ai_cd {
-    padding: 18px;
-  }
-  .ai_cd_boxes {
-    gap: 16px;
-  }
-  .ai_cd_box {
-    min-width: 60px;
-  }
-  .ai_cd_box b {
-    font-size: 1.5rem;
-  }
-  .ai_day {
-    flex-direction: column;
-  }
-  /* .ai_pr_img img {
+    .ai_sec {
+        padding: 40px 0;
+    }
+    .ai_cd {
+        padding: 18px;
+    }
+    .ai_cd_boxes {
+        gap: 16px;
+    }
+    .ai_cd_box {
+        min-width: 60px;
+    }
+    .ai_cd_box b {
+        font-size: 1.5rem;
+    }
+    .ai_day {
+        flex-direction: column;
+    }
+    /* .ai_pr_img img {
         height: 190px;
     }*/
-  .ai_why_modern .ai_why_head {
-    margin-bottom: 30px;
-  }
-  .ai_why_modern .ai_why_card {
-    padding: 22px 18px;
-  }
-  .ai_why_modern .ai_why_top {
-    margin-bottom: 20px;
-  }
-  .ai_why_modern .ai_why_card h3 {
-    font-size: 17px;
-  }
-  .ai_why_modern .ai_why_card p {
-    font-size: 13px;
-  }
-  .ai_themes .ai_title {
-    font-size: 18px;
-  }
-  .ai_register {
-    padding: 50px 0;
-  }
-  .ai_register .ai_fee_note {
-    padding: 16px;
-    font-size: 12px;
-    text-align: left;
-  }
-  .ai_register .ai_rf_card {
-    padding: 28px 18px;
-    margin-top: 28px;
-    border-radius: 13px;
-  }
-  .ai_register .ai_rf_card::before {
-    left: 18px;
-    right: 18px;
-  }
-  .ai_register .ai_rf_h {
-    font-size: 23px;
-  }
-  .ai_register .ai_muted {
-    font-size: 13px;
-  }
-  .ai_register .form-control,     .ai_register .form-select {
-    min-height: 50px;
-    font-size: 13px;
-  }
-  .ai_register .ai_btn {
-    width: 100%;
-    margin: 0 0 10px !important;
-    padding: 13px 15px;
-  }
-  .ai_room_modern {
-    padding: 40px 0;
-  }
-  .ai_room_modern .ai_room_content {
-    padding: 25px 20px;
-  }
-  .ai_room_modern .ai_room_visual {
-    min-height: 270px;
-    padding: 28px 22px;
-  }
-  .ai_venue {
-    padding: 50px 0;
-  }
-  .ai_venue .ai_sub {
-    font-size: 14px;
-  }
-  .ai_venue .ai_card {
-    padding: 23px 20px;
-  }
-  .ai_venue .ai_card h3 {
-    font-size: 21px;
-  }
-  .ai_venue .ai_map {
-    height: 320px;
-    min-height: 320px;
-    padding: 5px;
-    border-radius: 12px;
-  }
-  .ai_venue .ai_map iframe {
-    min-height: 308px;
-    border-radius: 8px;
-  }
-  .ai_glance_feature {
-    /*min-height: 360px;*/
-    padding: 25px 21px;
-  }
-  .ai_glance_feature_bg {
-    top: 20px;
-    right: 10px;
-    font-size: 125px;
-  }
-  .ai_glance_watermark {
-    font-size: 70px;
-    left: 18px;
-  }
-  .ai_glance_side {
-    grid-template-columns: 1fr;
-  }
-  .ai_glance_info {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px;
-  }
-  .ai_glance_bottom {
-    gap: 10px;
-    font-size: 7px;
-    letter-spacing: .7px;
-    margin-top: 28px;
-  }
-  .ai_orgs .ai_head .ai_btn {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-  }
-  #po-2027 {
-    padding: 22px 17px;
-    border-radius: 14px;
-  }
-  .ai_impact_content h2 {
-    font-size: 30px;
-  }
-  .ai_impact_card {
-    min-height: 205px;
-    padding: 20px 14px;
-    border-radius: 10px;
-  }
-  .ai_impact_icon {
-    width: 42px;
-    height: 42px;
-    margin-bottom: 18px;
-    font-size: 20px;
-  }
-  .ai_impact_card h3 {
-    font-size: 15px;
-    line-height: 1.4;
-  }
-  .ai_impact_card p {
-    font-size: 12px;
-    line-height: 1.65;
-  }
-  .ai_impact_num {
-    top: 15px;
-    right: 12px;
-    font-size: 15px;
-  }
-  .ai_impact_btn {
-    width: 100%;
-    padding: 14px;
-    font-size: 13px;
-  }
-  .ai_f50_cd div {
-    min-width: 70px;
-  }
-  .ai_f50_cd b {
-    font-size: 1.2rem;
-  }
-  .ai_f50_cd span {
-    font-size: .62rem;
-  }
-  .ai_f50_cd {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-    .ai_footer ul li a{
-    font-size: 12px;
-  }
+    .ai_why_modern .ai_why_head {
+        margin-bottom: 30px;
+    }
+    .ai_why_modern .ai_why_card {
+        padding: 22px 18px;
+    }
+    .ai_why_modern .ai_why_top {
+        margin-bottom: 20px;
+    }
+    .ai_why_modern .ai_why_card h3 {
+        font-size: 17px;
+    }
+    .ai_why_modern .ai_why_card p {
+        font-size: 13px;
+    }
+    .ai_themes .ai_title {
+        font-size: 18px;
+    }
+    .ai_register {
+        padding: 50px 0;
+    }
+    .ai_register .ai_fee_note {
+        padding: 16px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .ai_register .ai_rf_card {
+        padding: 28px 18px;
+        margin-top: 28px;
+        border-radius: 13px;
+    }
+    .ai_register .ai_rf_card::before {
+        left: 18px;
+        right: 18px;
+    }
+    .ai_register .ai_rf_h {
+        font-size: 23px;
+    }
+    .ai_register .ai_muted {
+        font-size: 13px;
+    }
+    .ai_register .form-control,     .ai_register .form-select {
+        min-height: 50px;
+        font-size: 13px;
+    }
+    .ai_register .ai_btn {
+        width: 100%;
+        margin: 0 0 10px !important;
+        padding: 13px 15px;
+    }
+    .ai_room_modern {
+        padding: 40px 0;
+    }
+    .ai_room_modern .ai_room_content {
+        padding: 25px 20px;
+    }
+    .ai_room_modern .ai_room_visual {
+        min-height: 270px;
+        padding: 28px 22px;
+    }
+    .ai_venue {
+        padding: 50px 0;
+    }
+    .ai_venue .ai_sub {
+        font-size: 14px;
+    }
+    .ai_venue .ai_card {
+        padding: 23px 20px;
+    }
+    .ai_venue .ai_card h3 {
+        font-size: 21px;
+    }
+    .ai_venue .ai_map {
+        height: 320px;
+        min-height: 320px;
+        padding: 5px;
+        border-radius: 12px;
+    }
+    .ai_venue .ai_map iframe {
+        min-height: 308px;
+        border-radius: 8px;
+    }
+    .ai_glance_feature {
+        /*min-height: 360px;*/
+        padding: 25px 21px;
+    }
+    .ai_glance_feature_bg {
+        top: 20px;
+        right: 10px;
+        font-size: 125px;
+    }
+    .ai_glance_watermark {
+        font-size: 70px;
+        left: 18px;
+    }
+    .ai_glance_side {
+        grid-template-columns: 1fr;
+    }
+    .ai_glance_info {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .ai_glance_bottom {
+        gap: 10px;
+        font-size: 7px;
+        letter-spacing: .7px;
+        margin-top: 28px;
+    }
+    .ai_orgs .ai_head .ai_btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    #po-2027 {
+        padding: 22px 17px;
+        border-radius: 14px;
+    }
+    .ai_impact_content h2 {
+        font-size: 30px;
+    }
+    .ai_impact_card {
+        min-height: 205px;
+        padding: 20px 14px;
+        border-radius: 10px;
+    }
+    .ai_impact_icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 18px;
+        font-size: 20px;
+    }
+    .ai_impact_card h3 {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+    .ai_impact_card p {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+    .ai_impact_num {
+        top: 15px;
+        right: 12px;
+        font-size: 15px;
+    }
+    .ai_impact_btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 13px;
+    }
+    .ai_f50_cd div {
+        min-width: 70px;
+    }
+    .ai_f50_cd b {
+        font-size: 1.2rem;
+    }
+    .ai_f50_cd span {
+        font-size: .62rem;
+    }
+    .ai_f50_cd {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ai_footer ul li a {
+        font-size: 12px;
+    }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ai_agenda_modern .ai_agenda_card,     .ai_agenda_modern .ai_agenda_arrow {
-    transition: none;
-  }
-  .ai_contact .ai_ct .ai_ico,     .ai_contact .ai_acc .accordion-item,     .ai_contact .ai_acc .accordion-button::before {
-    transition: none;
-  }
-  .ai_venue .ai_card,     .ai_venue .ai_btn {
-    transition: none;
-  }
-  .ai_register .form-control,     .ai_register .form-select,     .ai_register .ai_btn {
-    transition: none;
-  }
-  .ai_why_modern .ai_why_card,     .ai_why_modern .ai_why_icon,     .ai_why_modern .ai_why_line {
-    transition: none;
-  }
-  .ai_glance *,     .ai_glance *::before,     .ai_glance *::after {
-    transition: none !important;
-  }
-  .ai_orgs *,     .ai_orgs *::before,     .ai_orgs *::after {
-    transition: none !important;
-    animation: none !important;
-  }
-  .ai_js .ai_rv {
-    opacity: 1;
-    transform: none;
-    transition: none
-  }
-  html {
-    scroll-behavior: auto
-  }
+    .ai_agenda_modern .ai_agenda_card,     .ai_agenda_modern .ai_agenda_arrow {
+        transition: none;
+    }
+    .ai_contact .ai_ct .ai_ico,     .ai_contact .ai_acc .accordion-item,     .ai_contact .ai_acc .accordion-button::before {
+        transition: none;
+    }
+    .ai_venue .ai_card,     .ai_venue .ai_btn {
+        transition: none;
+    }
+    .ai_register .form-control,     .ai_register .form-select,     .ai_register .ai_btn {
+        transition: none;
+    }
+    .ai_why_modern .ai_why_card,     .ai_why_modern .ai_why_icon,     .ai_why_modern .ai_why_line {
+        transition: none;
+    }
+    .ai_glance *,     .ai_glance *::before,     .ai_glance *::after {
+        transition: none !important;
+    }
+    .ai_orgs *,     .ai_orgs *::before,     .ai_orgs *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+    .ai_js .ai_rv {
+        opacity: 1;
+        transform: none;
+        transition: none
+    }
+    html {
+        scroll-behavior: auto
+    }
 }
 @media print {
-  body * {
-    visibility: hidden;
-  }
-  #register .ai_rf_card, #register .ai_rf_card * {
-    visibility: visible;
-  }
-  #register .ai_rf_card {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    box-shadow: none;
-    border: 0;
-  }
-  #rfOk, #rfErr {
-    display: none!important;
-  }
+    body * {
+        visibility: hidden;
+    }
+    #register .ai_rf_card, #register .ai_rf_card * {
+        visibility: visible;
+    }
+    #register .ai_rf_card {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        border: 0;
+    }
+    #rfOk, #rfErr {
+        display: none!important;
+    }
 }
 @media (max-width: 380px) {
-  .ai_agenda_modern .ai_agenda_card {
-    grid-template-columns: 1fr;
-  }
-  .ai_agenda_modern .ai_agenda_date {
-    align-items: flex-start;
-    min-height: auto;
-    padding: 12px 15px;
-  }
-  .ai_agenda_modern .ai_agenda_date strong {
-    font-size: 32px;
-  }
+    .ai_agenda_modern .ai_agenda_card {
+        grid-template-columns: 1fr;
+    }
+    .ai_agenda_modern .ai_agenda_date {
+        align-items: flex-start;
+        min-height: auto;
+        padding: 12px 15px;
+    }
+    .ai_agenda_modern .ai_agenda_date strong {
+        font-size: 32px;
+    }
 }
 /* ---------- Header: dropdowns, logos, Partner Us, sticky nav ---------- */
 @media (min-width: 1200px) {
-  .ai_menu .nav-item.dropdown:hover > .dropdown-menu,     .ai_partner:hover > .dropdown-menu {
-    display: block;
-  }
-  .ai_partner .ai_partner_menu {
-    right: 0;
-    left: auto;
-  }
+    .ai_menu .nav-item.dropdown:hover > .dropdown-menu,     .ai_partner:hover > .dropdown-menu {
+        display: block;
+    }
+    .ai_partner .ai_partner_menu {
+        right: 0;
+        left: auto;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .ai_brand span {
-    font-size: .68rem;
-  }
-  .ai_menu_link,     .ai_dd_toggle {
-    padding: .5rem .55rem;
-    font-size: .75rem;
-  }
-  .ai_nav_cta .ai_btn {
-    font-size: .75rem;
-    padding: .45rem .85rem;
-  }
+    .ai_brand span {
+        font-size: .68rem;
+    }
+    .ai_menu_link,     .ai_dd_toggle {
+        padding: .5rem .55rem;
+        font-size: .78rem;
+    }
+    .ai_nav_cta .ai_btn {
+        font-size: .75rem;
+        padding: .45rem .85rem;
+    }
 }
 @media (max-width: 1199px) {
-  .ai_dd.dropdown-menu {
-    position: static;
-    box-shadow: none;
-    border: 0;
-    background: var(--blue-soft);
-  }
-  .ai_nav_wrap {
-    max-height: calc(100vh - 90px);
-    overflow-y: auto;
-  }
-  .ai_nav_cta {
-    padding-bottom: 12px;
-  }
-  .ai_partner {
-    position: relative;
-  }
+    .ai_dd.dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: 0;
+        background: var(--blue-soft);
+    }
+    .ai_nav_wrap {
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
+    }
+    .ai_nav_cta {
+        padding-bottom: 12px;
+    }
+    .ai_partner {
+        position: relative;
+    }
 }
 @media (max-width: 767px) {
-  html {
-    scroll-padding-top: 84px;
-  }
-  .ai_brand_50 img {
-    height: 50px;
-  }
-  /*.ai_brand_divider {
+    html {
+        scroll-padding-top: 84px;
+    }
+    .ai_brand_50 img {
+        height: 50px;
+    }
+    /*.ai_brand_divider {
         height: 34px;
     }*/
-  .ai_brand_group {
-    gap: 10px;
-  }
+    .ai_brand_group {
+        gap: 10px;
+    }
 }
 @media (max-width: 575px) {
-
-  .ai_brand svg {
-    width: 74px;
-    height: auto;
-  }
+    .ai_brand svg {
+        width: 74px;
+        height: auto;
+    }
 }
-
 /* ---------- Registration page (register.html) ---------- */
 @media (max-width: 991.98px) {
-  .ai_reg_sum { position: static; }
-  .ai_reg_top { padding-top: 120px; }
+    .ai_reg_sum {
+        position: static;
+    }
+    .ai_reg_top {
+        padding-top: 120px;
+    }
 }
 @media (max-width: 767.98px) {
-  .ai_reg_h { font-size: 25px; }
-  .ai_reg_steps { gap: 8px; overflow-x: auto; }
-  .ai_reg_steps li { font-size: 13px; gap: 6px; }
-  .ai_reg_steps li + li::before { width: 18px; }
-  .ai_reg_steps li span { width: 30px; height: 30px; }
-  .ai_reg_opt { padding: 18px 16px; gap: 12px; }
-  .ai_reg_opt_row, .ai_reg_price { font-size: 17px; }
-  .ai_reg_verify { padding: 20px 16px; }
-  .ai_reg_actions .ai_btn, .ai_reg_actions > div { width: 100%; justify-content: center; }
-  .ai_reg_actions > div .ai_btn { flex: 1; }
-  .ai_reg_review dl > div { flex-wrap: wrap; gap: 4px 12px; }
-  .ai_reg_review dt { flex: 0 0 100%; }
+    .ai_reg_h {
+        font-size: 25px;
+    }
+    .ai_reg_steps {
+        gap: 8px;
+        overflow-x: auto;
+    }
+    .ai_reg_steps li {
+        font-size: 13px;
+        gap: 6px;
+    }
+    .ai_reg_steps li + li::before {
+        width: 18px;
+    }
+    .ai_reg_steps li span {
+        width: 30px;
+        height: 30px;
+    }
+    .ai_reg_opt {
+        padding: 18px 16px;
+        gap: 12px;
+    }
+    .ai_reg_opt_row, .ai_reg_price {
+        font-size: 17px;
+    }
+    .ai_reg_verify {
+        padding: 20px 16px;
+    }
+    .ai_reg_actions .ai_btn, .ai_reg_actions > div {
+        width: 100%;
+        justify-content: center;
+    }
+    .ai_reg_actions > div .ai_btn {
+        flex: 1;
+    }
+    .ai_reg_review dl > div {
+        flex-wrap: wrap;
+        gap: 4px 12px;
+    }
+    .ai_reg_review dt {
+        flex: 0 0 100%;
+    }
 }

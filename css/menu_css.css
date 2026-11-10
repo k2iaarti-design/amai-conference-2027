@@ -1,14 +1,12 @@
-header .ai_brand_50{
-/*display: none;*/
+header .ai_brand_50 {
+    /*display: none;*/
 }
-
-
 .ai_topbar {
-    display:none;
+    display: none;
     background: var(--navy);
     border-bottom: 0;
     color: #DDEBF5;
-       font-size: .7rem;
+    font-size: .7rem;
     padding: 3px 0;
     border-bottom: 1px solid var(--blue-line);
 }
@@ -20,20 +18,18 @@ header .ai_brand_50{
     color: var(--gold);
     /*margin-right: 4px;*/
 }
-.ai_soc_top a{
-        width: 24px;
+.ai_soc_top a {
+    width: 24px;
     height: 24px;
-        font-size: 0.8rem;
-        border: none;
+    font-size: 0.8rem;
+    border: none;
 }
-.ai_soc_top a i{
-            color:#DDEBF5;
-
+.ai_soc_top a i {
+    color: #DDEBF5;
 }
-.ai_soc_top a:has(.bi-youtube){
+.ai_soc_top a:has(.bi-youtube) {
     display: none;
 }
-
 .ai_nav {
     background: rgba(255,255,255,.94);
     backdrop-filter: blur(10px);
@@ -53,7 +49,7 @@ header .ai_brand {
     font-weight: 700;
     font-size: .74rem;
     line-height: 1.25;
-    text-align:center;
+    text-align: center;
     display: none;
 }
 .ai_brand svg {
@@ -69,8 +65,8 @@ header .ai_brand {
     text-transform: uppercase;
 }
 .ai_menu_link:hover, .ai_menu_link.ai_active {
-     color: #fff;
-    background:var(--gold);
+    color: #fff;
+    background: var(--gold);
 }
 .ai_toggler {
     background: #fff;
@@ -80,7 +76,6 @@ header .ai_brand {
     font-size: 1.4rem;
     cursor: pointer;
     color: var(--text);
-
 }
 /* ---------- Overview / Participating Organisations dropdowns ---------- */
 .ai_menu .nav-item.dropdown {
@@ -96,7 +91,7 @@ header .ai_brand {
 }
 .ai_dd_toggle:hover, .ai_dd_toggle.show {
     color: #fff;
-    background:var(--gold);
+    background: var(--gold);
 }
 .ai_dd.dropdown-menu {
     border: 1px solid var(--blue-line);
@@ -120,7 +115,7 @@ header .ai_brand {
     /*flex: none;*/
 }
 .ai_brand_50 img {
-   height: 90px;
+    height: 90px;
     object-fit: contain;
 }
 /* ---------- Register Now + Partner Us ---------- */
@@ -130,9 +125,7 @@ header .ai_brand {
     border: 2px solid var(--gold);
     box-shadow: none;
 }
-.ai_btn_partner:hover,
-.ai_btn_partner:focus-visible,
-.ai_btn_partner.show {
+.ai_btn_partner:hover, .ai_btn_partner:focus-visible, .ai_btn_partner.show {
     background: var(--gold);
     border-color: var(--gold);
     color: var(--navy);
@@ -160,10 +153,9 @@ header .ai_brand {
     line-height: 1;
 }
 .ai_dd_item:hover i {
-    color:#000;
+    color: #000;
 }
-.ai_dd_item:hover,
-.ai_dd_item:focus-visible {
+.ai_dd_item:hover, .ai_dd_item:focus-visible {
     color: var();
     background: var(--gold);
 }
@@ -183,8 +175,7 @@ header .ai_brand {
     padding: 12px 16px;
     border-radius: 999px;
     box-shadow: 0 6px 18px rgba(0,0,0,.25);
-            display: none !important;
-
+    display: none !important;
 }
 .ai_wa:hover {
     color: #fff;
