@@ -9,6 +9,53 @@ $(function () {
     if ($(el).hasClass('show')) { bootstrap.Collapse.getOrCreateInstance(el).hide(); }
   });
 
+  /* ---------- Reliable in-page anchor scroll ----------
+     Lazy images above the target change the page height while the browser's
+     smooth scroll is running, so the first click stopped half way. Here the
+     target position is re-measured on every frame, so it always lands right. */
+  var aiScrolling = false;
+  $(document).on('click', 'a[href^="#"]:not([data-bs-toggle])', function (e) {
+    var hash = this.getAttribute('href');
+    if (!hash || hash.length < 2) { return; }
+    var $t = $(hash);
+    if (!$t.length) { return; }
+    e.preventDefault();
+    if (hash === '#register') { $t = $t.closest('section'); }
+    /* load every lazy image now so heights settle quickly */
+    $('img[loading="lazy"]').attr('loading', 'eager');
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var offset = parseInt($('html').css('scroll-padding-top'), 10) || 0;
+    var start = window.pageYOffset, t0 = null, dur = 700;
+    aiScrolling = true;
+    function jump(y) { window.scrollTo({ top: y, left: 0, behavior: 'instant' }); }
+    function target() {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      return Math.max(0, Math.min($t.offset().top - offset, max));
+    }
+    function frame(ts) {
+      if (t0 === null) { t0 = ts; }
+      var p = reduce ? 1 : Math.min((ts - t0) / dur, 1);
+      var ease = 1 - Math.pow(1 - p, 3);
+      if (!aiScrolling) { return; }
+      var to = target();
+      jump(start + (to - start) * ease);
+      if (!aiScrolling) { return; }
+      if (p < 1) { requestAnimationFrame(frame); }
+      else { settle(0); }
+    }
+    /* after the animation, keep correcting for ~1.5s in case images still load */
+    function settle(n) {
+      var to = target();
+      if (!aiScrolling) { return; }
+      if (Math.abs(window.pageYOffset - to) > 2) { jump(to); }
+      if (n < 15) { setTimeout(function () { settle(n + 1); }, 100); }
+      else { aiScrolling = false; }
+    }
+    $(window).one('wheel touchstart keydown', function () { aiScrolling = false; });
+    requestAnimationFrame(frame);
+    if (history.replaceState) { history.replaceState(null, '', hash); }
+  });
+
   /* ---------- Countdown to 28 Jan 2027 (IST) ---------- */
   var target = new Date('2027-01-28T00:00:00+05:30').getTime();
   function pad(n) { return String(n).padStart(2, '0'); }
@@ -50,6 +97,8 @@ $(function () {
 });
 
 
+
+
 $('#ai_speaker_sldr').owlCarousel({
       loop: true,
       margin: 20,
@@ -74,7 +123,7 @@ $('#ai_speaker_sldr').owlCarousel({
 
 
 /* ---------- Registration helpers ---------- */
-var AMAI_WA = '919818904989'; /* WhatsApp Business number - replace if different */
+var AMAI_WA = '+919599117989'; /* WhatsApp Business number - replace if different */
 
 function vs_onclick_form_get() {
   var f = document.forms['formget'];

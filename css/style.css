@@ -137,7 +137,7 @@ text-transform: uppercase;
 .ai_hero_overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.65);
+       background: rgb(0 0 0 / 85%);
     z-index: -1;
     pointer-events: none;
 }
@@ -2212,9 +2212,10 @@ padding: 10px;
   box-shadow: 0 12px 34px rgba(7,27,58,.07);
 }
 .ai_reg_sum_head {
-  padding: 26px 28px;
-  background: var(--navy);
-  color: #fff;
+      padding: 15px 20px;
+    background: var(--navy);
+    color: #fff;
+    font-size: 13px;
 }
 .ai_reg_sum_head small {
   display: block;
@@ -2225,9 +2226,10 @@ padding: 10px;
 }
 .ai_reg_sum_head h2 {
   margin: 8px 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   color: #fff;
+
 }
 .ai_reg_sum_head span {
   opacity: .9;
@@ -2250,3 +2252,16 @@ padding: 10px;
   font-size: 20px;
   font-weight: 800;
 }
+
+/*ai_partner_form  page s*/
+
+.ai_partner_form .form-control{
+      min-height: 54px;
+    padding: 13px 16px;
+    border: 1px solid #dce4ee;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    box-shadow: none;
+}
+
